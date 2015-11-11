@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>User registration form</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <!-- type "template" (inventat) indica que no és codi que hagi d'interpretar -->
+    <script id="tooltipTemplate" type="template">
+        <div class="tooltip">
+            <span class="tooltip-text"></span>
+        </div>
+    </script>
+
+    <form id="registrationForm">
+        <div class="field">
+            <label>User</label>
+            <input id="iUsername" placeholder="Username" type="text"/>
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input id="iPassword1" placeholder="Password" type="password"/>
+        </div>
+        <div class="field">
+            <label>Repeat Password</label>
+            <input id="iPassword2" placeholder="Repeat password" type="password"/>
+        </div>
+        <div class="field">
+            <label>E-mail</label>
+            <input id="iEmail" placeholder="E-mail" type="email"/>
+        </div>
+        <div class="field">
+            <label>Accept agreement</label>
+            <input id="iAgreement" type="checkbox"/>
+        </div>
+        <div class="actions">
+            <button id="bSubmit">Submit</button>
+            <button id="bClear">Clear form</button>
+        </div>
+    </form>
+</body>
+
+</html>
